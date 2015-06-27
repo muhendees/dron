@@ -11,7 +11,7 @@ To start this app:
 
 1. Install dependencies with `mix deps.get`
 2. Change [config/dev.exs](config/dev.exs) for Postgrex connection details
-3.`$ mix exto.create && mix ecto.migrate`
+3. Then run `$ mix exto.create && mix ecto.migrate` 
 4. Start Phoenix endpoint with `mix phoenix.server`
 
 Now you can visit `localhost:4000` from your browser.
