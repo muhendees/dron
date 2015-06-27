@@ -10,8 +10,8 @@ Special thanks to [Elixir-lang Slack channel](https://elixir-lang.slack.com) guy
 To start this app:
 
 1. Install dependencies with `mix deps.get`
-3. Change [config/dev.exs](config/dev.exs) for Postgrex connection details
-4.`$ mix exto.create && mix ecto.migrate`
-5. Start Phoenix endpoint with `mix phoenix.server`
+2. Change [config/dev.exs](config/dev.exs) for Postgrex connection details
+3.`$ mix exto.create && mix ecto.migrate`
+4. Start Phoenix endpoint with `mix phoenix.server`
 
 Now you can visit `localhost:4000` from your browser.
