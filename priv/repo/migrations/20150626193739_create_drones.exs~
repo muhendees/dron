@@ -1,0 +1,6 @@
+defmodule Dron.Repo.Migrations.CreateDrones do
+  use Ecto.Migration
+
+  def change do
+  end
+end

@@ -1,0 +1,14 @@
+<div class="col-xs-10 col-xs-offset-1 page-content">
+  <h3>
+    <span>Dron No. <%= @dronz.id %></span>
+
+  </h3>
+  <h4 class="text-left">
+   Year: <%= @dronz.year %>
+  </h4>
+
+  <h4 class="text-left">
+    Codename: <%= @dronz.name %>
+  </h4>
+
+</div>

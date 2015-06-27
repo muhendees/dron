@@ -1,0 +1,16 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h1>Edit dron info</h1>
+  <%= form_tag page_path(@conn, :update, @dron.id) %>
+    <div class="form-group">
+      <input type="hidden" name="_method" value="put">
+
+      <label for="dron[name]">name</label>
+      <input type="text" name="dron[name]" class="form-control" value="<%= @dron.name %>" />
+
+      <label for="dron[year]">year</label>
+      <input type="integer" name="dron[year]" class="form-control" value="<%= @dron.year %>" />
+
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+  </div>

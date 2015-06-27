@@ -1,0 +1,75 @@
+<div class="jumbotron">
+  <h2>Welcome to Phoenix!</h2>
+  <p class="lead">Most frameworks make you choose between speed and a productive environment. <a href="http://phoenixframework.org">Phoenix</a> and <a href="http://elixir-lang.org">Elixir</a> give you both.</p>
+</div>
+
+<div class="row marketing">
+  <div class="col-lg-6">
+    <h4>Resources</h4>
+    <ul>
+      <li>
+        <a href="http://phoenixframework.org/docs/overview">Guides</a>
+      </li>
+      <li>
+        <a href="http://hexdocs.pm/phoenix">Docs</a>
+      </li>
+      <li>
+        <a href="https://github.com/phoenixframework/phoenix">Source</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h4>Help</h4>
+    <ul>
+      <li>
+        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
+      </li>
+      <li>
+        <a href="https://github.com/phoenixframework/phoenix/issues?state=open">Issues</a>
+      </li>
+      <li>
+        <a href="irc://irc.freenode.net/elixir-lang">#elixir-lang on freenode IRC</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="page-content col-xs-10 col-xs-offset-1">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Saying</th>
+        <th>Author</th>
+        <th>Actions</th>
+    </thead>
+    <%= for q <- @dronz do %>
+    <tr>
+      <td>
+        <a href="<%=dronz_path(@conn, :show, q.id) %>">
+          <%= q.name %>
+        </a>
+      </td>
+      <td>
+        <%= q.year %>
+      </td>
+      
+      <!--
+      <td>
+        <a href="<%=quote_path(@conn, :edit, q.id) %>" class="btn btn-danger">
+          Edit
+        </a>
+
+        <a href="<%= quote_path(@conn, :destroy, q.id) %>" data-method="DELETE" class="rest btn btn-danger">
+          Destroy
+        </a>
+
+      </td>
+    </tr>
+    <% end %>
+  </table>
+-->
+</div>

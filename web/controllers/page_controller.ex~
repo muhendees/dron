@@ -1,0 +1,24 @@
+defmodule Dron.PageController do
+  use Dron.Web, :controller
+
+  plug :action
+
+  def index(conn, _params) do
+    conn
+		|> assign(:dronz, Repo.all(Drones))
+		|> render("index.html")
+	end
+	
+		
+	
+	"""
+	def show(conn, %{"id" => id}) do
+	{id, _} = Integer.parse(id)
+	conn
+	|> assign(:id, Repo.get(Drones, id))
+	|> render("show.html")
+	end
+	"""
+
+end
+
