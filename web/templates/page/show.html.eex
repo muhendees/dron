@@ -1,4 +1,4 @@
-<div class="col-xs-10 col-xs-offset-1 page-content">
+<div class="form-group text">
   <h3>
     <span>Dron No. <%= @dronz.id %></span>
 

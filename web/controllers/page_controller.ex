@@ -54,6 +54,8 @@ defmodule Dron.PageController do
 		Repo.delete(d)
 		redirect conn, to: page_path(conn, :index )
 	end
-
+def imgupload(conn, %{"id" => id, "image" => %{"name" => name, "file_name" => file_name, "file_size" => file_size}}) do
+	
+end
 end
 

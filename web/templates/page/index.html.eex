@@ -2,23 +2,33 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Year</th>
-        <th>Actions</th>
-	<td><%=link "Add new Dron", to: page_path(@conn, :new), method: "get", class: "btn btn-default btn-xs"%></td>
+	<td>
+	  <%=link "Add new Dron", to: page_path(@conn, :new), method: "get", class: "btn btn-default btn-xm"%>
+	</td>
+      </tr>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Actions</th>
     </thead>
     <%= for d <- @dronz do %>
 	<tr>
 	  <td>
-            <%= link d.name, to: page_path(@conn, :show, d.id), method: "get" %>
-	  </td>
-	  <td>
-            <%= d.year %>
-	  </td>
-	  <td>
-	    <%=link "Change", to: page_path(@conn, :edit, d.id), method: "get", class: "btn btn-danger"%>
-	    
-	    <%=link "Kill", to: page_path(@conn, :delete, d.id), method: "delete", class: "rest btn btn-danger" %>
-	  </td>
-	  <% end %>
+          <%= link d.name, to: page_path(@conn, :show, d.id), method: "get" %>
+	</td>
+	<td>
+          <%= d.year %>
+	</td>
+	<td>
+	  <%=link "Change", to: page_path(@conn, :edit, d.id), method: "get", class: "btn btn-danger"%>
+	  <%=link "Kill", to: page_path(@conn, :delete, d.id), method: "delete", class: "rest btn btn-danger" %>
+	</td>
+	<% end %>
+	</tr>
+</table>
 </div>
+
+<tfoot>
+<div>
+  <%=  %>
+</div>
+</tfoot>
